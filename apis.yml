@@ -1,17 +1,32 @@
 aid: iceotope
 name: Iceotope
-description: 'Iceotope is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Iceotope Technologies is a Sheffield, UK precision liquid cooling company
+  founded in 2005 as a research-driven "green computing" venture, now supplying chassis-level
+  liquid cooling for AI, HPC, data center and edge infrastructure. Its "direct to everything"
+  single-phase immersion approach removes heat from every component rather than the processor
+  alone, and ships as two product lines: KUL BOX for near-edge AI and HPC deployments, and
+  KUL AI liquid-cooled server chassis for high-density rack environments. The company licenses
+  its thermal IP (228 patents granted, allowed and pending) and works through OEM/ODM partnerships
+  with vendors including HPE, Intel and nVent. Iceotope is a hardware and thermal-engineering
+  business: it publishes no developer program, no public API, and no machine-readable API
+  contract on any host it controls.'
 url: https://raw.githubusercontent.com/api-evangelist/iceotope/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/697467ed5b822a913931bc4b/699ab949d1369217910f1b93_Iceotope%20Open%20Graph%20Image.jpg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Data Centers
+- Liquid Cooling
+- Thermal Management
+- Infrastructure
+- Edge Computing
+- High Performance Computing
+- Sustainability
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +34,47 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/iceotope-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.iceotope.com/
+- type: Blog
+  url: https://www.iceotope.com/company/resources
+- type: GitHubOrganization
+  url: https://github.com/Iceotope
+- type: PrivacyPolicy
+  url: https://www.iceotope.com/privacy-policy
+- type: TermsOfService
+  url: https://www.iceotope.com/terms-and-conditions
+- type: Contact
+  url: https://www.iceotope.com/contact-us
+- type: FAQ
+  url: https://www.iceotope.com/technology/faq
+- type: LLMsTxt
+  url: llms/iceotope-llms.txt
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Iceotope sells precision liquid-cooling hardware (KUL BOX and KUL AI chassis) and licenses
+    thermal IP through OEM/ODM partners, so there is nothing to expose as an API - its Webflow
+    site has no developer, docs or api path in its 108-URL sitemap, api./developer./docs.
+    iceotope.com do not resolve, and its GitHub org holds only two 2019 forks of OpenBMC and a
+    Xilinx firmware builder.
+  evidence:
+    - url: https://www.iceotope.com/developers
+      status: 404
+    - url: https://www.iceotope.com/openapi.json
+      status: 404
+    - url: https://www.iceotope.com/.well-known/api-catalog
+      status: 404
+    - url: https://api.github.com/orgs/Iceotope/repos
+      status: 200
+    - url: https://www.iceotope.com/sitemap.xml
+      status: 200
+  checked: '2026-08-22'

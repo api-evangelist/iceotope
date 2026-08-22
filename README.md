@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Iceotope is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Iceotope Technologies is a Sheffield, UK precision liquid cooling company founded in 2005,
+supplying chassis-level single-phase immersion cooling for AI, HPC, data center and edge
+infrastructure. Its two product lines are KUL BOX (near-edge) and KUL AI (high-density
+data center chassis), and it licenses its thermal IP through OEM/ODM partnerships.
+
+**API surface: none.** Probed 2026-08-22 — no developer portal, API reference, SDK, webhook
+surface, or machine-readable contract (OpenAPI, GraphQL, AsyncAPI, WSDL, Protobuf, MCP, A2A)
+on any Iceotope-controlled host. See `llms/iceotope-llms.txt` and the `x-coverage` block in
+`apis.yml` for exactly what was probed.
+
+- Website: https://www.iceotope.com/
+- Resources / blog: https://www.iceotope.com/company/resources
+- GitHub: https://github.com/Iceotope
+- Contact: https://www.iceotope.com/contact-us

@@ -1,0 +1,69 @@
+generated: '2026-08-22'
+method: probed
+source: live GET probes of /.well-known/* on every host in apis.yml
+note: >-
+  Recorded absence. Every /.well-known/ path returned 404 on both Iceotope-controlled
+  hosts, so NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file
+  documents that the surface is not served, it does not assert that it is. Both hosts
+  return honest 404s rather than a catch-all 200 (control probes below), so the
+  negatives are trustworthy.
+hit_count: 0
+hosts:
+- host: https://www.iceotope.com
+  platform: Webflow (cdn.prod.website-files.com)
+  soft_404_control:
+    path: /.well-known/api-evangelist-control-probe-<random>
+    status: 404
+    bytes: 88
+    verdict: honest-404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://portal.iceotope.com
+  platform: HubSpot CMS (marketing landing pages; site root itself returns 404)
+  soft_404_control:
+    path: /.well-known/api-evangelist-control-probe-<random>
+    status: 404
+    bytes: 10551
+    verdict: honest-404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
