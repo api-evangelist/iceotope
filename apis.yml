@@ -11,6 +11,17 @@ description: 'Iceotope Technologies is a Sheffield, UK precision liquid cooling 
   business: it publishes no developer program, no public API, and no machine-readable API
   contract on any host it controls.'
 url: https://raw.githubusercontent.com/api-evangelist/iceotope/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/697467ed5b822a913931bc4b/699ab949d1369217910f1b93_Iceotope%20Open%20Graph%20Image.jpg
 x-type: company
 x-source: harvest:secondary-market
