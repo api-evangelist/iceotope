@@ -42,7 +42,7 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
-- Data-Center
+- Data Center
 - Liquid Cooling
 - Thermal Management
 - Infrastructure
@@ -60,6 +60,7 @@ tags_raw:
 - High Performance Computing
 - Sustainability
 - Hardware
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
