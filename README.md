@@ -64,17 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Iceotope Technologies is a Sheffield, UK precision liquid cooling company founded in 2005,
-supplying chassis-level single-phase immersion cooling for AI, HPC, data center and edge
-infrastructure. Its two product lines are KUL BOX (near-edge) and KUL AI (high-density
-data center chassis), and it licenses its thermal IP through OEM/ODM partnerships.
+Iceotope Technologies is a Sheffield, UK precision liquid cooling company founded in 2005 as a research-driven "green computing" venture, now supplying chassis-level liquid cooling for AI, HPC, data center and edge infrastructure. Its "direct to everything" single-phase immersion approach removes heat from every component rather than the processor alone, and ships as two product lines: KUL BOX for near-edge AI and HPC deployments, and KUL AI liquid-cooled server chassis for high-density rack environments. The company licenses its thermal IP (228 patents granted, allowed and pending) and works through OEM/ODM partnerships with vendors including HPE, Intel and nVent. Iceotope is a hardware and thermal-engineering business: it publishes no developer program, no public API, and no machine-readable API contract on any host it controls.
 
-**API surface: none.** Probed 2026-08-22 — no developer portal, API reference, SDK, webhook
-surface, or machine-readable contract (OpenAPI, GraphQL, AsyncAPI, WSDL, Protobuf, MCP, A2A)
-on any Iceotope-controlled host. See `llms/iceotope-llms.txt` and the `x-coverage` block in
-`apis.yml` for exactly what was probed.
+**Areas:** Company · Data Center · Liquid Cooling · Thermal Management · Infrastructure · Edge Computing · High Performance Computing · Sustainability · Hardware
 
-- Website: https://www.iceotope.com/
-- Resources / blog: https://www.iceotope.com/company/resources
-- GitHub: https://github.com/Iceotope
-- Contact: https://www.iceotope.com/contact-us
+## Iceotope on APIs.io
+
+Everything profiled for Iceotope is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/iceotope/](https://apis.io/providers/iceotope/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Iceotope Domain Security](https://apis.io/security/iceotope/iceotope-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.iceotope.com/)
+- [Blog](https://www.iceotope.com/company/resources)
+- [Terms of service](https://www.iceotope.com/terms-and-conditions)
+- [Privacy policy](https://www.iceotope.com/privacy-policy)
+- [GitHub](https://github.com/Iceotope)
+
+## API Evangelist rating
+
+**Kin Score 9.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/iceotope/](https://apis.io/providers/iceotope/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Iceotope: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/iceotope/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
